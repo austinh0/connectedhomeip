@@ -9,6 +9,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "chip::Transport::AccessControlList", "structchip_1_1_transport_1_1_access_control_list.html", null ],
+    [ "chip::Transport::TCPBase::ActiveConnectionState", "structchip_1_1_transport_1_1_t_c_p_base_1_1_active_connection_state.html", null ],
     [ "chip.ble.get_adapters.AdapterInfo", "classchip_1_1ble_1_1get__adapters_1_1_adapter_info.html", null ],
     [ "chip::SetupPayloadData::AdditionalDataPayload", "structchip_1_1_setup_payload_data_1_1_additional_data_payload.html", null ],
     [ "chip::AdditionalDataPayloadGenerator", "classchip_1_1_additional_data_payload_generator.html", null ],
@@ -135,7 +136,6 @@ var hierarchy =
       [ "chip::Controller::BasicCluster", "classchip_1_1_controller_1_1_basic_cluster.html", null ],
       [ "chip::Controller::BindingCluster", "classchip_1_1_controller_1_1_binding_cluster.html", null ],
       [ "chip::Controller::ColorControlCluster", "classchip_1_1_controller_1_1_color_control_cluster.html", null ],
-      [ "chip::Controller::ContentLaunchCluster", "classchip_1_1_controller_1_1_content_launch_cluster.html", null ],
       [ "chip::Controller::DoorLockCluster", "classchip_1_1_controller_1_1_door_lock_cluster.html", null ],
       [ "chip::Controller::GeneralCommissioningCluster", "classchip_1_1_controller_1_1_general_commissioning_cluster.html", null ],
       [ "chip::Controller::GroupKeyManagementCluster", "classchip_1_1_controller_1_1_group_key_management_cluster.html", null ],
@@ -144,7 +144,6 @@ var hierarchy =
       [ "chip::Controller::IdentifyCluster", "classchip_1_1_controller_1_1_identify_cluster.html", null ],
       [ "chip::Controller::LevelControlCluster", "classchip_1_1_controller_1_1_level_control_cluster.html", null ],
       [ "chip::Controller::LowPowerCluster", "classchip_1_1_controller_1_1_low_power_cluster.html", null ],
-      [ "chip::Controller::MediaPlaybackCluster", "classchip_1_1_controller_1_1_media_playback_cluster.html", null ],
       [ "chip::Controller::NetworkCommissioningCluster", "classchip_1_1_controller_1_1_network_commissioning_cluster.html", null ],
       [ "chip::Controller::OnOffCluster", "classchip_1_1_controller_1_1_on_off_cluster.html", null ],
       [ "chip::Controller::ScenesCluster", "classchip_1_1_controller_1_1_scenes_cluster.html", null ],
@@ -222,7 +221,8 @@ var hierarchy =
         [ "chip.exceptions.DeviceError", "classchip_1_1exceptions_1_1_device_error.html", null ],
         [ "chip.exceptions.InvalidArgumentCount", "classchip_1_1exceptions_1_1_invalid_argument_count.html", null ],
         [ "chip.exceptions.InvalidArgumentType", "classchip_1_1exceptions_1_1_invalid_argument_type.html", null ]
-      ] ]
+      ] ],
+      [ "chip.setuppayload.SetupPayloadParser.UnrecognizedQrCodeException", "classchip_1_1setuppayload_1_1_setup_payload_parser_1_1_unrecognized_qr_code_exception.html", null ]
     ] ],
     [ "chip::TLV::Utilities::FindContext", "structchip_1_1_t_l_v_1_1_utilities_1_1_find_context.html", null ],
     [ "chip::TLV::Utilities::FindPredicateContext", "structchip_1_1_t_l_v_1_1_utilities_1_1_find_predicate_context.html", null ],
@@ -253,6 +253,12 @@ var hierarchy =
     ] ],
     [ "chip::DeviceLayer::Internal::GenericConnectivityManagerImpl_Thread< ImplClass >", "classchip_1_1_device_layer_1_1_internal_1_1_generic_connectivity_manager_impl___thread.html", null ],
     [ "chip::DeviceLayer::Internal::GenericConnectivityManagerImpl_WiFi< ImplClass >", "classchip_1_1_device_layer_1_1_internal_1_1_generic_connectivity_manager_impl___wi_fi.html", null ],
+    [ "chip::Mdns::GenericContext", "structchip_1_1_mdns_1_1_generic_context.html", [
+      [ "chip::Mdns::BrowseContext", "structchip_1_1_mdns_1_1_browse_context.html", null ],
+      [ "chip::Mdns::GetAddrInfoContext", "structchip_1_1_mdns_1_1_get_addr_info_context.html", null ],
+      [ "chip::Mdns::RegisterContext", "structchip_1_1_mdns_1_1_register_context.html", null ],
+      [ "chip::Mdns::ResolveContext", "structchip_1_1_mdns_1_1_resolve_context.html", null ]
+    ] ],
     [ "chip::DeviceLayer::Internal::GenericPlatformManagerImpl< ImplClass >", "classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl.html", [
       [ "chip::DeviceLayer::Internal::GenericPlatformManagerImpl_Zephyr< ImplClass >", "classchip_1_1_device_layer_1_1_internal_1_1_generic_platform_manager_impl___zephyr.html", null ]
     ] ],
@@ -303,6 +309,7 @@ var hierarchy =
     [ "chip::ManualSetupPayloadGenerator", "classchip_1_1_manual_setup_payload_generator.html", null ],
     [ "chip::ManualSetupPayloadParser", "classchip_1_1_manual_setup_payload_parser.html", null ],
     [ "chip::Mdns::MdnsAvahi", "classchip_1_1_mdns_1_1_mdns_avahi.html", null ],
+    [ "chip::Mdns::MdnsContexts", "classchip_1_1_mdns_1_1_mdns_contexts.html", null ],
     [ "chip::Mdns::MdnsService", "structchip_1_1_mdns_1_1_mdns_service.html", null ],
     [ "chip::MessageAuthenticationCode", "classchip_1_1_message_authentication_code.html", null ],
     [ "metaclass", null, [
@@ -362,10 +369,10 @@ var hierarchy =
     [ "chip::Optional< uint16_t >", "classchip_1_1_optional.html", null ],
     [ "chip::Optional< uint32_t >", "classchip_1_1_optional.html", null ],
     [ "chip::Optional< uint8_t >", "classchip_1_1_optional.html", null ],
+    [ "chip.setuppayload.OptionalQRCodeInfo", "classchip_1_1setuppayload_1_1_optional_q_r_code_info.html", null ],
     [ "chip::OptionalQRCodeInfo", "structchip_1_1_optional_q_r_code_info.html", [
       [ "chip::OptionalQRCodeInfoExtension", "structchip_1_1_optional_q_r_code_info_extension.html", null ]
     ] ],
-    [ "chip.setuppayload.OptionalQRCodeInfo", "classchip_1_1setuppayload_1_1_optional_q_r_code_info.html", null ],
     [ "chip.setuppayload.OptionalQRCodeInfo.OptionalQRCodeInfoType", "enumchip_1_1setuppayload_1_1_optional_q_r_code_info_1_1_optional_q_r_code_info_type.html", null ],
     [ "chip::Crypto::P256KeypairContext", "structchip_1_1_crypto_1_1_p256_keypair_context.html", null ],
     [ "chip::System::PacketBufferHandle", "classchip_1_1_system_1_1_packet_buffer_handle.html", [
@@ -498,8 +505,8 @@ var hierarchy =
     [ "chip::SessionEstablishmentDelegate", "classchip_1_1_session_establishment_delegate.html", [
       [ "chip::RendezvousSession", "classchip_1_1_rendezvous_session.html", null ]
     ] ],
-    [ "chip.setuppayload.SetupPayload", "classchip_1_1setuppayload_1_1_setup_payload.html", null ],
     [ "chip::SetupPayload", "classchip_1_1_setup_payload.html", null ],
+    [ "chip.setuppayload.SetupPayload", "classchip_1_1setuppayload_1_1_setup_payload.html", null ],
     [ "chip::SetupPayloadParameter", "structchip_1_1_setup_payload_parameter.html", null ],
     [ "chip.setuppayload.SetupPayloadParser", "classchip_1_1setuppayload_1_1_setup_payload_parser.html", null ],
     [ "chip::Shell::Shell", "classchip_1_1_shell_1_1_shell.html", null ],

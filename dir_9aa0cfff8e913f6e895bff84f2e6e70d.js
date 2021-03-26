@@ -8,6 +8,7 @@ var dir_9aa0cfff8e913f6e895bff84f2e6e70d =
       [ "SetupPayload", "classchip_1_1setuppayload_1_1_setup_payload.html", "classchip_1_1setuppayload_1_1_setup_payload" ]
     ] ],
     [ "SetupPayloadParser.java", "_setup_payload_parser_8java.html", [
-      [ "SetupPayloadParser", "classchip_1_1setuppayload_1_1_setup_payload_parser.html", "classchip_1_1setuppayload_1_1_setup_payload_parser" ]
+      [ "SetupPayloadParser", "classchip_1_1setuppayload_1_1_setup_payload_parser.html", "classchip_1_1setuppayload_1_1_setup_payload_parser" ],
+      [ "UnrecognizedQrCodeException", "classchip_1_1setuppayload_1_1_setup_payload_parser_1_1_unrecognized_qr_code_exception.html", "classchip_1_1setuppayload_1_1_setup_payload_parser_1_1_unrecognized_qr_code_exception" ]
     ] ]
 ];

@@ -1,9 +1,11 @@
 var _setup_payload_parser__j_n_i_8cpp =
 [
     [ "JNI_METHOD", "_setup_payload_parser-_j_n_i_8cpp.html#afb241bbadf3a673efff8ea02c119dd4d", null ],
+    [ "if", "_setup_payload_parser-_j_n_i_8cpp.html#acc09a8ef23f912cd489a3e960529c535", null ],
     [ "JNI_METHOD", "_setup_payload_parser-_j_n_i_8cpp.html#a1873c60604cfcd645b1a8e97e3bf7f55", null ],
     [ "JNI_METHOD", "_setup_payload_parser-_j_n_i_8cpp.html#aa882f8885ee8a4338a4a6d2ece230b4e", null ],
     [ "JNI_OnLoad", "_setup_payload_parser-_j_n_i_8cpp.html#aac186441c8ba05258b9e1ee3e8e669f8", null ],
+    [ "ThrowUnrecognizedQRCodeException", "_setup_payload_parser-_j_n_i_8cpp.html#a0ef5207a536725024a054fe5e3f5a922", null ],
     [ "TransformSetupPayload", "_setup_payload_parser-_j_n_i_8cpp.html#ad375b50f46df1d7eda57a1d903527662", null ],
     [ "TransformSetupPayload", "_setup_payload_parser-_j_n_i_8cpp.html#ad2eef2ab63421c097affedac58dda166", null ],
     [ "entryCode", "_setup_payload_parser-_j_n_i_8cpp.html#ae4f9d4a5eba9e035368c214fdb8498fd", null ],

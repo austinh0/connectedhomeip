@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">e1edd18</span>
+   &#160;<span id="projectnumber">230a71a</span>
    </div>
   </td>
  </tr>
@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('classchip_1_1setuppayload_1_1_setup_pa
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classchip_1_1setuppayload_1_1_setup_payload_parser-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -94,12 +95,17 @@ $(document).ready(function(){initNavTree('classchip_1_1setuppayload_1_1_setup_pa
 <p>Parser for scanned QR code or manual entry code.  
  <a href="classchip_1_1setuppayload_1_1_setup_payload_parser.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload_parser_1_1_unrecognized_qr_code_exception.html">UnrecognizedQrCodeException</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a38c0a4032b9c9bcf83e2865d86990685"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload.html">SetupPayload</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload_parser.html#a38c0a4032b9c9bcf83e2865d86990685">parseQrCode</a> (String qrCodeString)</td></tr>
+<tr class="memitem:a38c0a4032b9c9bcf83e2865d86990685"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload.html">SetupPayload</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload_parser.html#a38c0a4032b9c9bcf83e2865d86990685">parseQrCode</a> (String qrCodeString)  throws UnrecognizedQrCodeException </td></tr>
 <tr class="memdesc:a38c0a4032b9c9bcf83e2865d86990685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="classchip_1_1setuppayload_1_1_setup_payload.html">SetupPayload</a> parsed from the QR code string.  <a href="classchip_1_1setuppayload_1_1_setup_payload_parser.html#a38c0a4032b9c9bcf83e2865d86990685">More...</a><br /></td></tr>
 <tr class="separator:a38c0a4032b9c9bcf83e2865d86990685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a30e716b49ec272fb3a5b97c7f4fa76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload.html">SetupPayload</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload_parser.html#a1a30e716b49ec272fb3a5b97c7f4fa76">parseManualEntryCode</a> (String <a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#ac9d12169cebd2c89033a89571a07dca6">entryCodeString</a>)</td></tr>
+<tr class="memitem:a1a30e716b49ec272fb3a5b97c7f4fa76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload.html">SetupPayload</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload_parser.html#a1a30e716b49ec272fb3a5b97c7f4fa76">parseManualEntryCode</a> (String <a class="el" href="_setup_payload_parser-_j_n_i_8cpp.html#ac9d12169cebd2c89033a89571a07dca6">entryCodeString</a>)  throws UnrecognizedQrCodeException </td></tr>
 <tr class="memdesc:a1a30e716b49ec272fb3a5b97c7f4fa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="classchip_1_1setuppayload_1_1_setup_payload.html">SetupPayload</a> parsed from the manual entry code string.  <a href="classchip_1_1setuppayload_1_1_setup_payload_parser.html#a1a30e716b49ec272fb3a5b97c7f4fa76">More...</a><br /></td></tr>
 <tr class="separator:a1a30e716b49ec272fb3a5b97c7f4fa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -120,7 +126,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>entryCodeString</em></td><td>)</td>
-          <td></td>
+          <td> throws <a class="el" href="classchip_1_1setuppayload_1_1_setup_payload_parser_1_1_unrecognized_qr_code_exception.html">UnrecognizedQrCodeException</a></td>
         </tr>
       </table>
   </td>
@@ -148,7 +154,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>qrCodeString</em></td><td>)</td>
-          <td></td>
+          <td> throws <a class="el" href="classchip_1_1setuppayload_1_1_setup_payload_parser_1_1_unrecognized_qr_code_exception.html">UnrecognizedQrCodeException</a></td>
         </tr>
       </table>
   </td>
@@ -171,7 +177,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacechip.html">chip</a></li><li class="navelem"><a class="el" href="namespacechip_1_1setuppayload.html">setuppayload</a></li><li class="navelem"><a class="el" href="classchip_1_1setuppayload_1_1_setup_payload_parser.html">SetupPayloadParser</a></li>
-    <li class="footer">Generated on Fri Mar 19 2021 22:20:51 for Connected Home over IP by
+    <li class="footer">Generated on Fri Mar 26 2021 01:04:45 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

@@ -27,7 +27,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Connected Home over IP
-   &#160;<span id="projectnumber">e1edd18</span>
+   &#160;<span id="projectnumber">230a71a</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 <li>RawValue()
 : <a class="el" href="classmdns_1_1_minimal_1_1_bit_packed_flags.html#a6ab16e63031893d4b9cfb573b2a74ac9">mdns::Minimal::BitPackedFlags</a>
 </li>
+<li>Read()
+: <a class="el" href="classchip_1_1_system_1_1_packet_buffer.html#a4ed8f36d27742745d384d17ea535138d">chip::System::PacketBuffer</a>
+</li>
 <li>Read16()
 : <a class="el" href="classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#aa086a202c01da34179989d5adb7ea532">chip::Encoding::LittleEndian::Reader</a>
 </li>
@@ -152,7 +155,6 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 , <a class="el" href="classchip_1_1_controller_1_1_basic_cluster.html#a1ef4e9a99a616da3b28d3db86200dc53">chip::Controller::BasicCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_binding_cluster.html#ada22fdfb3d6e4151585ebeba3b6cfcf6">chip::Controller::BindingCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a885dd4bd8bce7e94e55de1f189919a7f">chip::Controller::ColorControlCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_content_launch_cluster.html#afca7f83f7cad90dc47c525f454e67e68">chip::Controller::ContentLaunchCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_door_lock_cluster.html#a4db021e676a5fea328265c16a200a068">chip::Controller::DoorLockCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_general_commissioning_cluster.html#a7d7ab7f2eac20c893649a6a820824a62">chip::Controller::GeneralCommissioningCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_group_key_management_cluster.html#a9dd3312385cc4a6a57686c12dc61ac05">chip::Controller::GroupKeyManagementCluster</a>
@@ -161,7 +163,6 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 , <a class="el" href="classchip_1_1_controller_1_1_identify_cluster.html#a7cee4a97538a89fc850791bc60fa9d69">chip::Controller::IdentifyCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_level_control_cluster.html#af01458812bff348723b85fbf10ad56b5">chip::Controller::LevelControlCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_low_power_cluster.html#a6b0c6802a2efef77fd05c649315f82bc">chip::Controller::LowPowerCluster</a>
-, <a class="el" href="classchip_1_1_controller_1_1_media_playback_cluster.html#afed037f87d5c52a01b8eab7314b592f6">chip::Controller::MediaPlaybackCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_network_commissioning_cluster.html#abb70936b04fc89a4d6103e92c8f5bbe9">chip::Controller::NetworkCommissioningCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_on_off_cluster.html#a45bf2715d677e321229484a3855929fa">chip::Controller::OnOffCluster</a>
 , <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a1c1cf653ac1e210d357b8b97430c108e">chip::Controller::ScenesCluster</a>
@@ -241,9 +242,6 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 </li>
 <li>ReadAttributeCurrentScene()
 : <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a3bdcd52731d4ff1e6d40ba70060dee47">chip::Controller::ScenesCluster</a>
-</li>
-<li>ReadAttributeCurrentState()
-: <a class="el" href="classchip_1_1_controller_1_1_media_playback_cluster.html#a164adb3ddc785285b69ba5fc2714ae09">chip::Controller::MediaPlaybackCluster</a>
 </li>
 <li>ReadAttributeCurrentX()
 : <a class="el" href="classchip_1_1_controller_1_1_color_control_cluster.html#a406bdfb976750bc47795d40f9e1c9412">chip::Controller::ColorControlCluster</a>
@@ -425,7 +423,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 : <a class="el" href="classchip_1_1_controller_1_1_ias_zone_cluster.html#a11104429772932042de414b7b2ebae9b">chip::Controller::IasZoneCluster</a>
 </li>
 <li>ReadConfigValue()
-: <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_c_c13_x2__26_x2_config.html#a41e5268d6af25e8a0552e34d19951f36">chip::DeviceLayer::Internal::CC13X2_26X2Config</a>
+: <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_c_c13_x2__26_x2_config.html#a351f351c3f895f5f395f45d38d60d4da">chip::DeviceLayer::Internal::CC13X2_26X2Config</a>
 , <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_e_f_r32_config.html#a7a83634e280ec89f663baacf8075780e">chip::DeviceLayer::Internal::EFR32Config</a>
 , <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_e_s_p32_config.html#ae8c1c5a78aab73ae5b58b770e875c0c4">chip::DeviceLayer::Internal::ESP32Config</a>
 , <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_k32_w_config.html#a84ef2af303b4bb9fd03277d496caf822">chip::DeviceLayer::Internal::K32WConfig</a>
@@ -452,7 +450,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 , <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_e_f_r32_config.html#aa2bb731133fbe04cedd43122bd24ab8a">chip::DeviceLayer::Internal::EFR32Config</a>
 , <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_e_s_p32_config.html#a15ccfb9f5868573dee21d8f1befc14cb">chip::DeviceLayer::Internal::ESP32Config</a>
 , <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_k32_w_config.html#a015dd27a1be92c4231c10a5c7872d7a9">chip::DeviceLayer::Internal::K32WConfig</a>
-, <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_posix_config.html#a0ace5bec5c7bbefedf686040ba204e3f">chip::DeviceLayer::Internal::PosixConfig</a>
+, <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_posix_config.html#aec5ad3eff315a36ee7e32dccf1cb05b0">chip::DeviceLayer::Internal::PosixConfig</a>
 , <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_q_p_g6100_config.html#a69c65fee6a71ead2935570293a3b6002">chip::DeviceLayer::Internal::QPG6100Config</a>
 , <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_zephyr_config.html#a0fcc02cf2967a1e1748f6cfc93158213">chip::DeviceLayer::Internal::ZephyrConfig</a>
 </li>
@@ -510,6 +508,9 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 <li>RegisterCommands()
 : <a class="el" href="classchip_1_1_shell_1_1_shell.html#aa1b25a6017143b2c61232fca56026f8d">chip::Shell::Shell</a>
 </li>
+<li>RegisterContext()
+: <a class="el" href="structchip_1_1_mdns_1_1_register_context.html#ad99df8194e632f4fa0bd994769bc8237">chip::Mdns::RegisterContext</a>
+</li>
 <li>RegisterDefaultCommands()
 : <a class="el" href="classchip_1_1_shell_1_1_shell.html#a463aae7c00b42008e0185b7d3e6dbb15">chip::Shell::Shell</a>
 </li>
@@ -547,7 +548,8 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 : <a class="el" href="classchip_1_1_encoding_1_1_little_endian_1_1_reader.html#aeb805a01856c73ef1aff760ca759ef47">chip::Encoding::LittleEndian::Reader</a>
 </li>
 <li>Remove()
-: <a class="el" href="classchip_1_1_retransmit_1_1_cache.html#ae61ba10180d202a749e8a5033957b028">chip::Retransmit::Cache&lt; KeyType, PayloadType, N &gt;</a>
+: <a class="el" href="classchip_1_1_mdns_1_1_mdns_contexts.html#aabe2ceaa8f4773f7ac8a0a6a7b6e3a8d">chip::Mdns::MdnsContexts</a>
+, <a class="el" href="classchip_1_1_retransmit_1_1_cache.html#ae61ba10180d202a749e8a5033957b028">chip::Retransmit::Cache&lt; KeyType, PayloadType, N &gt;</a>
 , <a class="el" href="classchip_1_1_serializable_u64_set_base.html#afe7d5be22364afcb0cafef5bc055cf54">chip::SerializableU64SetBase</a>
 </li>
 <li>RemoveAll()
@@ -579,6 +581,9 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 </li>
 <li>removeOptionalVendorData()
 : <a class="el" href="classchip_1_1_setup_payload.html#ae7f3b4ef8143199c1577622d2c7a8a1c">chip::SetupPayload</a>
+</li>
+<li>Removes()
+: <a class="el" href="classchip_1_1_mdns_1_1_mdns_contexts.html#a259d75046062dc2482b9e949a781ec80">chip::Mdns::MdnsContexts</a>
 </li>
 <li>RemoveScene()
 : <a class="el" href="classchip_1_1_controller_1_1_scenes_cluster.html#a25e1799ae7ef61194aa52f26cdce92e2">chip::Controller::ScenesCluster</a>
@@ -677,6 +682,9 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 <li>Resolve()
 : <a class="el" href="classchip_1_1_mdns_1_1_mdns_avahi.html#a5d617cf00e47dda034d4adc43bf44d70">chip::Mdns::MdnsAvahi</a>
 </li>
+<li>ResolveContext()
+: <a class="el" href="structchip_1_1_mdns_1_1_resolve_context.html#afaad4b07aa4e39867b25f0e8e06f2648">chip::Mdns::ResolveContext</a>
+</li>
 <li>ResolveNode()
 : <a class="el" href="classchip_1_1_chip_device_ctrl_1_1_chip_device_controller.html#a05a44333ea131f000d49a2a83fd20459">chip.ChipDeviceCtrl.ChipDeviceController</a>
 </li>
@@ -685,7 +693,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 , <a class="el" href="classchip_1_1_mdns_1_1_resolver.html#a83fd921a62ceac9db7a996d04cd45293">chip::Mdns::Resolver</a>
 </li>
 <li>ResourceData()
-: <a class="el" href="classmdns_1_1_minimal_1_1_resource_data.html#a066fdbac509f3d3651f83749d188f0b4">mdns::Minimal::ResourceData</a>
+: <a class="el" href="classmdns_1_1_minimal_1_1_resource_data.html#af080a41411c81f39031b4fe37dd34ce8">mdns::Minimal::ResourceData</a>
 </li>
 <li>ResourceRecord()
 : <a class="el" href="classmdns_1_1_minimal_1_1_resource_record.html#a0feb60eb0a87612a4a0a79c8e160c96e">mdns::Minimal::ResourceRecord</a>
@@ -700,7 +708,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 : <a class="el" href="classmdns_1_1_minimal_1_1_responder.html#a4358ee7b3acd188c1a85f2460f991f54">mdns::Minimal::Responder</a>
 </li>
 <li>ResponseBuilder()
-: <a class="el" href="classmdns_1_1_minimal_1_1_response_builder.html#a37524afc1a330e975e53bcddeccc01df">mdns::Minimal::ResponseBuilder</a>
+: <a class="el" href="classmdns_1_1_minimal_1_1_response_builder.html#a489ba85fc7cb69c05be75a807df29f63">mdns::Minimal::ResponseBuilder</a>
 </li>
 <li>ResponseSender()
 : <a class="el" href="classmdns_1_1_minimal_1_1_response_sender.html#a022789be44e7fcf5010e3e91dc2cfcf0">mdns::Minimal::ResponseSender</a>
@@ -726,9 +734,6 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 </li>
 <li>RetrieveLastUsedEpochKeyId()
 : <a class="el" href="classchip_1_1_device_layer_1_1_internal_1_1_group_key_store_impl.html#a6d3ae2ea21a892cc28446e66cc9cf15f">chip::DeviceLayer::Internal::GroupKeyStoreImpl</a>
-</li>
-<li>RewindRequest()
-: <a class="el" href="classchip_1_1_controller_1_1_media_playback_cluster.html#aca5b77917381b35214d9d5bb24c266ad">chip::Controller::MediaPlaybackCluster</a>
 </li>
 <li>RightSize()
 : <a class="el" href="classchip_1_1_system_1_1_packet_buffer_handle.html#aca41ab74b3bd3ae450721848f8289dc6">chip::System::PacketBufferHandle</a>
@@ -789,7 +794,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 19 2021 22:20:52 for Connected Home over IP by
+    <li class="footer">Generated on Fri Mar 26 2021 01:04:46 for Connected Home over IP by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
