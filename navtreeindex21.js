@@ -1,5 +1,14 @@
 var NAVTREEINDEX21 =
 {
+"classchip_1_1_controller_1_1_application_basic_cluster.html#afb99881f560faea3ec4c671e09d4e9af":[10,0,1,11,0,1],
+"classchip_1_1_controller_1_1_barrier_control_cluster.html":[10,0,1,11,1],
+"classchip_1_1_controller_1_1_barrier_control_cluster.html#a23452c3bc8dffa342046518349934875":[10,0,1,11,1,8],
+"classchip_1_1_controller_1_1_barrier_control_cluster.html#a3d66c0116fd4944d62210faaf8076201":[10,0,1,11,1,3],
+"classchip_1_1_controller_1_1_barrier_control_cluster.html#a4efae56ca82aa1e6cece7fac9d3a0fef":[10,0,1,11,1,9],
+"classchip_1_1_controller_1_1_barrier_control_cluster.html#a72d695de1bb3a35c64889f9704d2ded2":[10,0,1,11,1,4],
+"classchip_1_1_controller_1_1_barrier_control_cluster.html#a828f557410dd144bae07bf71366bbbdb":[10,0,1,11,1,6],
+"classchip_1_1_controller_1_1_barrier_control_cluster.html#a90990b70541581f8d95da3f2062d8b79":[10,0,1,11,1,5],
+"classchip_1_1_controller_1_1_barrier_control_cluster.html#aaef24b41b400007fb2b44fa93f1b46bb":[10,0,1,11,1,0],
 "classchip_1_1_controller_1_1_barrier_control_cluster.html#abfceff7e648168a84c17c7fc4fb77c0f":[10,0,1,11,1,7],
 "classchip_1_1_controller_1_1_barrier_control_cluster.html#acb901c3d743ffc5cef502929548dba4c":[10,0,1,11,1,2],
 "classchip_1_1_controller_1_1_barrier_control_cluster.html#af2760d5f245fcbf19155c26627fa3e87":[10,0,1,11,1,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX21 =
 "classchip_1_1_controller_1_1_door_lock_cluster.html#a0d1e45924601199b061ff5de61275cee":[10,0,1,11,14,6],
 "classchip_1_1_controller_1_1_door_lock_cluster.html#a246c30e23920b281e1d21941e202606a":[10,0,1,11,14,4],
 "classchip_1_1_controller_1_1_door_lock_cluster.html#a32bc30bd11d54e8b37ae64bb2af60c05":[10,0,1,11,14,5],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#a48723709a42844526751cdbbd977e10c":[10,0,1,11,14,3],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#a4a38d5d37d78a4fa28a3dddb118c496a":[10,0,1,11,14,26],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#a4db021e676a5fea328265c16a200a068":[10,0,1,11,14,20],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#a6a44e33fb2fb2ffc25f3ccef56e2a046":[10,0,1,11,14,31],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#a76e23f6bf0a1b13e71408930c40aa8bc":[10,0,1,11,14,8],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#a8a576faef54462b004cbb0f76832149b":[10,0,1,11,14,2],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#a9745359ec218ba1cb90c5425238b77a7":[10,0,1,11,14,18],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#a9a7cf613f1ab2b6f1fb3fc1ae6996c27":[10,0,1,11,14,14],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#aa218eb94f20a348075a353bc07db3bdd":[10,0,1,11,14,19],
-"classchip_1_1_controller_1_1_door_lock_cluster.html#aabe892ad64535bbe4e3f3781a3fb49b4":[10,0,1,11,14,0]
+"classchip_1_1_controller_1_1_door_lock_cluster.html#a48723709a42844526751cdbbd977e10c":[10,0,1,11,14,3]
 };

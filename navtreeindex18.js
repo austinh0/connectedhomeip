@@ -1,5 +1,14 @@
 var NAVTREEINDEX18 =
 {
+"class_verhoeff16.html#aa885ecd37f5baf334ee8aaefdb04860d":[10,0,20,6],
+"class_verhoeff16.html#aab1b1ba6bc4eb807f8c0e074056c4116":[10,0,20,5],
+"class_verhoeff16.html#acf8436b85457a84fa05da464598275f5a39bd744966a31ddbb81538970575e572":[10,0,20,1],
+"class_verhoeff16.html#acf8436b85457a84fa05da464598275f5adae26a3058ebbb67a1633c24e2371f10":[10,0,20,0],
+"class_verhoeff16.html#adfb7e2c5f3cd58f2deaa479f79671857":[10,0,20,4],
+"class_verhoeff16.html#ae560c16adc46b055d3015358096b7483":[10,0,20,2],
+"class_verhoeff16.html#af14262780b0f595422ab6d50e6c43b55":[10,0,20,3],
+"class_verhoeff32.html":[10,0,21],
+"class_verhoeff32.html#a3545bed26d875c4982f40d9fe2a8f8aa":[10,0,21,7],
 "class_verhoeff32.html#a35ee487355ca8b815856464d25dada99":[10,0,21,6],
 "class_verhoeff32.html#a3d07a7ff8fe0d5c4927c041a17b68d87":[10,0,21,3],
 "class_verhoeff32.html#a5543d1c7fd74ada575ac3f4f4a2bdd5aa4461e747c4d29a348ea927b04ce6e678":[10,0,21,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX18 =
 "classchip_1_1_ble_1_1_btp_engine.html#aed1593ba2fb3c557853c4743ebcf61bf":[10,0,1,1,9,22],
 "classchip_1_1_ble_1_1_btp_engine.html#aef3714678640bd8f004b8b5cad512f9a":[10,0,1,1,9,14],
 "classchip_1_1_c_a_s_e_session.html":[10,0,1,38],
-"classchip_1_1_c_a_s_e_session.html#a09f51e0dda66751eea3dc5fa70462e47":[10,0,1,38,5],
-"classchip_1_1_c_a_s_e_session.html#a122403178e97f20833661d8051983c85":[10,0,1,38,6],
-"classchip_1_1_c_a_s_e_session.html#a13979b193831b5aec49be444e3f5ccdc":[10,0,1,38,13],
-"classchip_1_1_c_a_s_e_session.html#a498cae087d14f279f9e3282fc5100ce0":[10,0,1,38,1],
-"classchip_1_1_c_a_s_e_session.html#a54bf984cfe919f13144c35d194bbca04":[10,0,1,38,8],
-"classchip_1_1_c_a_s_e_session.html#a5b24b6e40cfbd058542d5de0eae8076b":[10,0,1,38,11],
-"classchip_1_1_c_a_s_e_session.html#a63a9be2d074b270724abb158bc492515":[10,0,1,38,7],
-"classchip_1_1_c_a_s_e_session.html#a75a0c55aab60b4957690d5be2625aac8":[10,0,1,38,15],
-"classchip_1_1_c_a_s_e_session.html#a8a7a593e645a2173ac571fe93b2c44bb":[10,0,1,38,12],
-"classchip_1_1_c_a_s_e_session.html#a8ed60bf3b060927b2da8c283b2530cbd":[10,0,1,38,3]
+"classchip_1_1_c_a_s_e_session.html#a09f51e0dda66751eea3dc5fa70462e47":[10,0,1,38,5]
 };

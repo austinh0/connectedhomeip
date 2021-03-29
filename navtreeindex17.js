@@ -1,5 +1,14 @@
 var NAVTREEINDEX17 =
 {
+"cc13x2__26x2_2_c_h_i_p_device_platform_config_8h.html#a1a08e34432ba21fab7d9c754f9b3ef85":[11,0,7,0,6,5],
+"cc13x2__26x2_2_c_h_i_p_device_platform_config_8h.html#a2e0e2d7e88fb0465575b2b6697dbf831":[11,0,7,0,6,4],
+"cc13x2__26x2_2_c_h_i_p_device_platform_config_8h.html#a2e3b07369e948e071210aec9a7e9ade1":[11,0,7,0,6,1],
+"cc13x2__26x2_2_c_h_i_p_device_platform_config_8h.html#a66145c1b40a752120e05ce2ed15249af":[11,0,7,0,6,2],
+"cc13x2__26x2_2_c_h_i_p_device_platform_config_8h.html#a8de4975c6e458415e950eba9a65834c2":[11,0,7,0,6,0],
+"cc13x2__26x2_2_c_h_i_p_device_platform_config_8h.html#a9c2359cca72ed5a69a57cab4b1f644ff":[11,0,7,0,6,10],
+"cc13x2__26x2_2_c_h_i_p_device_platform_config_8h.html#ac0549bd8a7ac13d3811c5bcd5435b13d":[11,0,7,0,6,7],
+"cc13x2__26x2_2_c_h_i_p_device_platform_config_8h.html#acad19e7385da5f597eb0fee94773aed3":[11,0,7,0,6,9],
+"cc13x2__26x2_2_c_h_i_p_device_platform_config_8h.html#af79b42fabea928b9b34e8f633240aae9":[11,0,7,0,6,6],
 "cc13x2__26x2_2_c_h_i_p_device_platform_config_8h_source.html":[11,0,7,0,6],
 "cc13x2__26x2_2_c_h_i_p_device_platform_event_8h.html":[11,0,7,0,7],
 "cc13x2__26x2_2_c_h_i_p_device_platform_event_8h_source.html":[11,0,7,0,7],
@@ -240,14 +249,5 @@ var NAVTREEINDEX17 =
 "class_verhoeff16.html#a1229ebf2a8499c329e0f7d91a2d50a6a":[10,0,20,7],
 "class_verhoeff16.html#a6790c0372b072a6b756960b9fd4872d6":[10,0,20,10],
 "class_verhoeff16.html#a6be612d6c95b53f5952cf8d6307c0d0f":[10,0,20,9],
-"class_verhoeff16.html#a9771ae295ede190c8217d7429b6989c6":[10,0,20,8],
-"class_verhoeff16.html#aa885ecd37f5baf334ee8aaefdb04860d":[10,0,20,6],
-"class_verhoeff16.html#aab1b1ba6bc4eb807f8c0e074056c4116":[10,0,20,5],
-"class_verhoeff16.html#acf8436b85457a84fa05da464598275f5a39bd744966a31ddbb81538970575e572":[10,0,20,1],
-"class_verhoeff16.html#acf8436b85457a84fa05da464598275f5adae26a3058ebbb67a1633c24e2371f10":[10,0,20,0],
-"class_verhoeff16.html#adfb7e2c5f3cd58f2deaa479f79671857":[10,0,20,4],
-"class_verhoeff16.html#ae560c16adc46b055d3015358096b7483":[10,0,20,2],
-"class_verhoeff16.html#af14262780b0f595422ab6d50e6c43b55":[10,0,20,3],
-"class_verhoeff32.html":[10,0,21],
-"class_verhoeff32.html#a3545bed26d875c4982f40d9fe2a8f8aa":[10,0,21,7]
+"class_verhoeff16.html#a9771ae295ede190c8217d7429b6989c6":[10,0,20,8]
 };
