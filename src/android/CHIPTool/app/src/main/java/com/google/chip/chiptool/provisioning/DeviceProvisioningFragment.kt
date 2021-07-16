@@ -136,7 +136,7 @@ class DeviceProvisioningFragment : Fragment() {
     }
 
     override fun onOpCSRGenerationComplete(errorCode: ByteArray) {
-      Log.d(TAG,String(errorCode))
+      Log.d(TAG, String(errorCode))
     }
 
     override fun onPairingDeleted(code: Int) {
