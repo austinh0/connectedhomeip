@@ -19,6 +19,7 @@
 
 #include "JniReferences.h"
 
+#include <core/CHIPCallback.h>
 #include <jni.h>
 #include <lib/support/Span.h>
 #include <sstream>
@@ -92,4 +93,37 @@ public:
 
 private:
     jclass mClassRef;
+};
+
+/**
+ *  Wraps a CHIP callback with a Java callback.
+ *
+ *  TODO: use this in CHIPClusters-JNI.cpp
+ */
+template <class T>
+class JniCallback : public chip::Callback::Callback<T>
+{
+public:
+    JniCallback(T callback, jobject javaCallback) : chip::Callback::Callback<T>(callback, this)
+    {
+        JNIEnv * env = chip::Controller::JniReferences::GetInstance().GetEnvForCurrentThread();
+        VerifyOrReturn(env != nullptr, ChipLogError(Controller, "Could not get JNIEnv for current thread"));
+        javaCallbackRef = env->NewGlobalRef(javaCallback);
+        if (javaCallbackRef == nullptr)
+        {
+            ChipLogError(Controller, "Could not create global reference for Java callback");
+        }
+    }
+
+    ~JniCallback()
+    {
+        JNIEnv * env = chip::Controller::JniReferences::GetInstance().GetEnvForCurrentThread();
+        VerifyOrReturn(env != nullptr, ChipLogError(Controller, "Could not get JNIEnv for current thread"));
+        env->DeleteGlobalRef(javaCallbackRef);
+    };
+
+    jobject javaCallback() { return javaCallbackRef; }
+
+private:
+    jobject javaCallbackRef;
 };

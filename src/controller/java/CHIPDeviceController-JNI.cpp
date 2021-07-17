@@ -345,50 +345,56 @@ JNI_METHOD(void, getConnectedDevicePointer)(JNIEnv * env, jobject self, jlong ha
     StackLockGuard lock(JniReferences::GetInstance().GetStackLock());
     AndroidDeviceControllerWrapper * wrapper = AndroidDeviceControllerWrapper::FromJNIHandle(handle);
 
-    Callback::Callback<OnDeviceConnected> connectedCallback(OnDeviceConnectedFn, callback);
-    Callback::Callback<OnDeviceConnectionFailure> failureCallback(OnDeviceConnectionFailureFn, callback);
+    JniCallback<OnDeviceConnected> * connectedCallback = new JniCallback<OnDeviceConnected>(OnDeviceConnectedFn, callback);
+    JniCallback<OnDeviceConnectionFailure> * failureCallback =
+        new JniCallback<OnDeviceConnectionFailure>(OnDeviceConnectionFailureFn, callback);
 
-    wrapper->Controller()->GetConnectedDevice(nodeId, &connectedCallback, &failureCallback);
+    wrapper->Controller()->GetConnectedDevice(nodeId, connectedCallback, failureCallback);
 }
 
 void OnDeviceConnectedFn(void * context, Device * device)
 {
-    JNIEnv * env     = JniReferences::GetInstance().GetEnvForCurrentThread();
-    jobject callback = static_cast<jobject>(context);
+    JNIEnv * env                              = JniReferences::GetInstance().GetEnvForCurrentThread();
+    JniCallback<OnDeviceConnected> * callback = reinterpret_cast<JniCallback<OnDeviceConnected> *>(context);
+    jobject javaCallback                      = callback->javaCallback();
 
     jclass getConnectedDeviceCallbackCls = nullptr;
     JniReferences::GetInstance().GetClassRef(env, "chip/devicecontroller/GetConnectedDeviceCallback",
                                              getConnectedDeviceCallbackCls);
     VerifyOrReturn(getConnectedDeviceCallbackCls != nullptr,
-                   ChipLogError(Controller, "Could not find GetConnectedDeviceCallback class"));
+                   ChipLogError(Controller, "Could not find GetConnectedDeviceCallback class"), delete callback);
 
     jmethodID successMethod;
-    JniReferences::GetInstance().FindMethod(env, callback, "onDeviceConnected", "(J)V", &successMethod);
-    VerifyOrReturn(successMethod != nullptr, ChipLogError(Controller, "Could not find onDeviceConnected method"));
+    JniReferences::GetInstance().FindMethod(env, javaCallback, "onDeviceConnected", "(J)V", &successMethod);
+    VerifyOrReturn(successMethod != nullptr, ChipLogError(Controller, "Could not find onDeviceConnected method"), delete callback);
 
     static_assert(sizeof(jlong) >= sizeof(void *), "Need to store a pointer in a Java handle");
-    env->CallVoidMethod(callback, successMethod, reinterpret_cast<jlong>(device));
+    env->CallVoidMethod(javaCallback, successMethod, reinterpret_cast<jlong>(device));
+    delete callback;
 }
 
 void OnDeviceConnectionFailureFn(void * context, NodeId nodeId, CHIP_ERROR error)
 {
-    JNIEnv * env     = JniReferences::GetInstance().GetEnvForCurrentThread();
-    jobject callback = static_cast<jobject>(context);
+    JNIEnv * env                                      = JniReferences::GetInstance().GetEnvForCurrentThread();
+    JniCallback<OnDeviceConnectionFailure> * callback = reinterpret_cast<JniCallback<OnDeviceConnectionFailure> *>(context);
+    jobject javaCallback                              = callback->javaCallback();
 
     jclass getConnectedDeviceCallbackCls = nullptr;
     JniReferences::GetInstance().GetClassRef(env, "chip/devicecontroller/GetConnectedDeviceCallback",
                                              getConnectedDeviceCallbackCls);
     VerifyOrReturn(getConnectedDeviceCallbackCls != nullptr,
-                   ChipLogError(Controller, "Could not find GetConnectedDeviceCallback class"));
+                   ChipLogError(Controller, "Could not find GetConnectedDeviceCallback class"), delete callback);
 
     jmethodID failureMethod;
-    JniReferences::GetInstance().FindMethod(env, callback, "onConnectionFailure", "(JLjava/lang/Exception;)V", &failureMethod);
-    VerifyOrReturn(failureMethod != nullptr, ChipLogError(Controller, "Could not find onConnectionFailure method"));
+    JniReferences::GetInstance().FindMethod(env, javaCallback, "onConnectionFailure", "(JLjava/lang/Exception;)V", &failureMethod);
+    VerifyOrReturn(failureMethod != nullptr, ChipLogError(Controller, "Could not find onConnectionFailure method"),
+                   delete callback);
 
     jthrowable exception;
     VerifyOrReturn(N2J_Error(env, error, exception) == CHIP_NO_ERROR,
-                   ChipLogError(Controller, "Could not create exception for onConnectionFailure: %d", error));
-    env->CallVoidMethod(callback, failureMethod, nodeId, exception);
+                   ChipLogError(Controller, "Could not create exception for onConnectionFailure: %d", error), delete callback);
+    env->CallVoidMethod(javaCallback, failureMethod, nodeId, exception);
+    delete callback;
 }
 
 JNI_METHOD(void, pairTestDeviceWithoutSecurity)(JNIEnv * env, jobject self, jlong handle, jstring deviceAddr)
